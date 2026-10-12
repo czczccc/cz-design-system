@@ -81,7 +81,7 @@ function Payload({ label, value }: { label: string; value: unknown }) {
   return (
     <div className="grid gap-1">
       <span className="text-caption text-fg-subtle">{label}</span>
-      <pre className="overflow-x-auto font-mono text-footnote text-fg-muted">
+      <pre className="overflow-x-auto font-mono text-footnote whitespace-pre-wrap break-words text-fg-muted">
         {typeof value === "string" ? value : JSON.stringify(value, null, 2)}
       </pre>
     </div>
